@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | Timeless</title>
   <meta name="description" content="Timeless - Divertimento con un tocco di eleganza. Sabato 10 Ottobre 2026.">
+  <meta property="og:title" content="Timeless">
+  <meta property="og:description" content="Divertimento con un tocco di eleganza. Sabato 10 Ottobre 2026.">
   <meta name="theme-color" content="#14213d">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +18,13 @@
 <nav class="nav">
   <div class="nav-inner">
     <a class="logo" href="index.html">Timeless</a>
+    <button class="menu-toggle" aria-label="Apri menu">☰</button>
     <div class="menu">
       <a href="dress-code.html">Dress Code</a>
       <a href="dove-siamo.html">Dove siamo</a>
       <a href="biglietti.html">Biglietti</a>
       <a href="regolamento.html">Regolamento</a>
+      <a href="faq.html">FAQ</a>
       <a class="cta" href="biglietti.html">Acquista</a>
     </div>
   </div>
@@ -28,23 +32,23 @@
 
 <header class="hero">
   <div class="hero-content">
-    <p class="kicker">Evento privato su invito</p>
-    <h1>Timeless</h1>
-    <p class="slogan">Divertimento con un tocco di eleganza</p>
-    <div class="meta">
+    <p class="kicker reveal">Evento privato su invito</p>
+    <h1 class="reveal">Timeless</h1>
+    <p class="slogan reveal">Divertimento con un tocco di eleganza</p>
+    <div class="meta reveal">
       <span>Sabato 10 Ottobre 2026</span>
       <span>18:00 — 00:00</span>
       <span>Ingresso entro 20:00</span>
       <span>Rolo (RE)</span>
     </div>
-    <a class="btn primary" href="biglietti.html">Prenota il tuo ingresso</a>
-    <a class="btn light" href="dress-code.html">Dress Code Old Money</a>
+    <a class="btn primary reveal" href="biglietti.html">Prenota il tuo ingresso</a>
+    <a class="btn light reveal" href="dress-code.html">Dress Code Old Money</a>
   </div>
 </header>
 
 <section class="section">
   <div class="container split">
-    <div>
+    <div class="reveal">
       <p class="label">Il concept</p>
       <h2>Una serata elegante, ma pensata per divertirsi davvero.</h2>
       <p class="lead">
@@ -56,7 +60,7 @@
         colori neutri, linee pulite, dettagli senza tempo e un’eleganza naturale.
       </p>
     </div>
-    <div class="image-card img-hero-detail"></div>
+    <div class="image-card img-event reveal"></div>
   </div>
 </section>
 
@@ -70,23 +74,26 @@
 </section>
 
 <section class="section">
-  <div class="container">
-    <p class="label center">Esplora</p>
-    <h2 class="center">Tutto ciò che devi sapere.</h2>
-    <div class="feature-grid">
-      <a class="feature" href="dress-code.html"><div class="num">01</div><h3>Dress Code</h3><p>Lo stile Old Money, la palette consigliata e cosa evitare.</p></a>
-      <a class="feature" href="dove-siamo.html"><div class="num">02</div><h3>Dove siamo</h3><p>Indirizzo, posizione e orari di accesso alla location.</p></a>
-      <a class="feature" href="regolamento.html"><div class="num">03</div><h3>Regolamento</h3><p>Le regole principali per vivere una serata elegante e piacevole.</p></a>
+  <div class="container narrow center reveal">
+    <p class="label">Countdown</p>
+    <h2>Il tempo scorre. L’eleganza resta.</h2>
+    <div class="countdown" data-countdown>
+      <div><strong id="days">--</strong><span>Giorni</span></div>
+      <div><strong id="hours">--</strong><span>Ore</span></div>
+      <div><strong id="minutes">--</strong><span>Minuti</span></div>
+      <div><strong id="seconds">--</strong><span>Secondi</span></div>
     </div>
   </div>
 </section>
 
 <section class="section" style="background:var(--cream)">
   <div class="container">
-    <p class="label center">Atmosfera</p>
-    <h2 class="center">Old Money mood.</h2>
-    <div class="gallery">
-      <div></div><div></div><div></div>
+    <p class="label center reveal">Esplora</p>
+    <h2 class="center reveal">Tutto ciò che devi sapere.</h2>
+    <div class="feature-grid">
+      <a class="feature reveal" href="dress-code.html"><div class="num">01</div><h3>Dress Code</h3><p>Lo stile Old Money, la palette consigliata e cosa evitare.</p></a>
+      <a class="feature reveal" href="dove-siamo.html"><div class="num">02</div><h3>Dove siamo</h3><p>Indirizzo, posizione e orari di accesso alla location.</p></a>
+      <a class="feature reveal" href="regolamento.html"><div class="num">03</div><h3>Regolamento</h3><p>Le regole principali per vivere una serata elegante e piacevole.</p></a>
     </div>
   </div>
 </section>
@@ -96,5 +103,6 @@
   <p>Divertimento con un tocco di eleganza</p>
   <span>Sabato 10 Ottobre 2026 · Rolo (RE)</span>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

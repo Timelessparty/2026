@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dress Code | Timeless</title>
   <meta name="description" content="Timeless - Divertimento con un tocco di eleganza. Sabato 10 Ottobre 2026.">
+  <meta property="og:title" content="Timeless">
+  <meta property="og:description" content="Divertimento con un tocco di eleganza. Sabato 10 Ottobre 2026.">
   <meta name="theme-color" content="#14213d">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="inner-page">
 
 <nav class="nav">
   <div class="nav-inner">
     <a class="logo" href="index.html">Timeless</a>
+    <button class="menu-toggle" aria-label="Apri menu">☰</button>
     <div class="menu">
       <a href="dress-code.html">Dress Code</a>
       <a href="dove-siamo.html">Dove siamo</a>
       <a href="biglietti.html">Biglietti</a>
       <a href="regolamento.html">Regolamento</a>
+      <a href="faq.html">FAQ</a>
       <a class="cta" href="biglietti.html">Acquista</a>
     </div>
   </div>
@@ -36,47 +40,38 @@
 
 <section class="section">
   <div class="container split">
-    <div>
+    <div class="reveal">
       <p class="label">Lo stile richiesto</p>
       <h2>Eleganza senza tempo.</h2>
       <p class="lead">
         Il dress code di Timeless è Old Money: uno stile sobrio, curato e raffinato.
         Non serve ostentare. Conta l’armonia dell’insieme.
       </p>
-      <p>
-        Scegli capi puliti, tessuti semplici, colori neutri e accessori discreti.
-        L’obiettivo è creare un’atmosfera elegante ma naturale.
-      </p>
+      <p>Scegli capi puliti, tessuti semplici, colori neutri e accessori discreti.</p>
     </div>
-    <div class="image-card img-dress"></div>
+    <div class="image-card img-dress reveal"></div>
   </div>
 </section>
 
 <section class="section" style="background:var(--cream)">
   <div class="container">
-    <p class="label center">Palette consigliata</p>
-    <h2 class="center">Colori da preferire</h2>
+    <p class="label center reveal">Palette consigliata</p>
+    <h2 class="center reveal">Colori da preferire</h2>
     <div class="palette">
-      <div class="swatch" style="--c:#ffffff"><span>Bianco</span></div>
-      <div class="swatch" style="--c:#fbf8f1"><span>Avorio</span></div>
-      <div class="swatch" style="--c:#decdb7"><span>Beige</span></div>
-      <div class="swatch" style="--c:#d8d8d4"><span>Grigio chiaro</span></div>
-      <div class="swatch" style="--c:#14213d"><span>Blu navy</span></div>
-      <div class="swatch" style="--c:#b69a5f"><span>Oro satinato</span></div>
+      <div class="swatch reveal" style="--c:#ffffff"><span>Bianco</span></div>
+      <div class="swatch reveal" style="--c:#fbf8f1"><span>Avorio</span></div>
+      <div class="swatch reveal" style="--c:#decdb7"><span>Beige</span></div>
+      <div class="swatch reveal" style="--c:#d8d8d4"><span>Grigio chiaro</span></div>
+      <div class="swatch reveal" style="--c:#14213d"><span>Blu navy</span></div>
+      <div class="swatch reveal" style="--c:#b69a5f"><span>Oro satinato</span></div>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container advice-grid">
-    <div class="card">
-      <h3>Consigliato</h3>
-      <p>Camicia, blazer, abiti eleganti, pantaloni sartoriali, colori neutri, dettagli navy o oro satinato.</p>
-    </div>
-    <div class="card">
-      <h3>Da evitare</h3>
-      <p>Colori fluo, stampe troppo vistose, outfit sportivi, tute, abbigliamento eccessivamente casual.</p>
-    </div>
+    <div class="card reveal"><h3>Consigliato</h3><p>Camicia, blazer, abiti eleganti, pantaloni sartoriali, colori neutri, dettagli navy o oro satinato.</p></div>
+    <div class="card reveal"><h3>Da evitare</h3><p>Colori fluo, stampe troppo vistose, outfit sportivi, tute, abbigliamento eccessivamente casual.</p></div>
   </div>
 </section>
 
@@ -85,5 +80,6 @@
   <p>Divertimento con un tocco di eleganza</p>
   <span>Sabato 10 Ottobre 2026 · Rolo (RE)</span>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
