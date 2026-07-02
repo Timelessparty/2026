@@ -3,53 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Acquista il biglietto | Midnight Garden Party</title>
+  <title>Biglietti | Timeless</title>
+  <meta name="description" content="Timeless - Divertimento con un tocco di eleganza. Sabato 10 Ottobre 2026.">
+  <meta name="theme-color" content="#16243d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="nav">
-      <div class="nav-inner">
-        <div class="logo">Midnight Garden Party</div>
-        <div class="menu">
-          <a href="index.html">Home</a>
-          <a href="dove-siamo.html">Dove siamo</a>
-          <a href="biglietti.html">Acquista il biglietto</a>
-          <a href="regolamento.html">Regolamento</a>
-        </div>
-      </div>
-    </nav>
-    
-
-<section class="section">
-  <div class="kicker">Ingresso su invito</div>
-  <h2>Acquista il biglietto</h2>
-  <p class="lead">
-    Scegli il tuo ingresso, completa il modulo e riceverai automaticamente il biglietto
-    nominativo all’indirizzo email indicato.
-  </p>
-  <div class="grid">
-    <div class="card">
-      <h3>Biglietto Basic</h3>
-      <div class="price">5€</div>
-      <p>Ingresso nominativo all’evento con QR Code personale.</p>
-      <a class="btn gold" href="https://docs.google.com/forms/d/e/1FAIpQLSeAN1ZaFgnXwj2jyfGnuEeLC1TvUi9U5IaZZJ-cmzciqfqPOw/viewform?usp=dialog" target="_blank" rel="noopener">Acquista Basic</a>
-    </div>
-    <div class="card">
-      <h3>Biglietto Plus</h3>
-      <div class="price">7€</div>
-      <p>Include l’ingresso nominativo e l’accesso alla playlist ufficiale per suggerire i tuoi brani.</p>
-      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeAN1ZaFgnXwj2jyfGnuEeLC1TvUi9U5IaZZJ-cmzciqfqPOw/viewform?usp=dialog" target="_blank" rel="noopener">Acquista Plus</a>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Timeless</a>
+    <div class="menu">
+      <a href="dress-code.html">Dress Code</a>
+      <a href="dove-siamo.html">Dove siamo</a>
+      <a href="biglietti.html">Biglietti</a>
+      <a href="regolamento.html">Regolamento</a>
+      <a class="nav-cta" href="biglietti.html">Acquista</a>
     </div>
   </div>
-  <div class="notice" style="margin-top:24px;">
-    Il biglietto verrà inviato automaticamente via email dopo l’acquisto.
-    Le email sono generate automaticamente: non rispondere direttamente a quei messaggi.
+</nav>
+
+<header class="page-hero" style="--bg:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=80')">
+  <div class="page-hero-content">
+    <p class="kicker">Biglietti</p>
+    <h1>Il tuo ingresso</h1>
+    <p>Dopo l’acquisto riceverai via email il biglietto nominativo con QR Code.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <p class="label center">Scegli il biglietto</p>
+    <h2 class="center">Prenota il tuo ingresso</h2>
+    <p class="center narrow">
+      Il biglietto verrà inviato automaticamente all’indirizzo email indicato.
+      Ricordati di portarlo con te il giorno dell’evento.
+    </p>
+
+    <div class="ticket-grid">
+      <article class="ticket">
+        <span class="ticket-type">Ingresso Basic</span>
+        <div class="price">5€</div>
+        <ul>
+          <li>Accesso all’evento</li>
+          <li>Biglietto nominativo</li>
+          <li>QR Code personale</li>
+        </ul>
+        <a class="btn primary full" href="https://docs.google.com/forms/d/e/1FAIpQLSeAN1ZaFgnXwj2jyfGnuEeLC1TvUi9U5IaZZJ-cmzciqfqPOw/viewform?usp=dialog" target="_blank" rel="noopener">Acquista Basic</a>
+      </article>
+
+      <article class="ticket featured">
+        <span class="ticket-type">Biglietto Plus</span>
+        <div class="price">7€</div>
+        <ul>
+          <li>Accesso all’evento</li>
+          <li>Biglietto nominativo</li>
+          <li>QR Code personale</li>
+          <li>Playlist collaborativa</li>
+        </ul>
+        <a class="btn primary full" href="https://docs.google.com/forms/d/e/1FAIpQLSeAN1ZaFgnXwj2jyfGnuEeLC1TvUi9U5IaZZJ-cmzciqfqPOw/viewform?usp=dialog" target="_blank" rel="noopener">Acquista Plus</a>
+      </article>
+    </div>
   </div>
 </section>
 
-<footer class="footer">
-  Evento privato su invito · 3 Ottobre 2026 · Rolo (RE)
+<footer>
+  <h2>Timeless</h2>
+  <p>Divertimento con un tocco di eleganza</p>
+  <span>Sabato 10 Ottobre 2026 · Rolo (RE)</span>
 </footer>
 </body>
 </html>
