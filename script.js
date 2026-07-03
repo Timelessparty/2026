@@ -70,3 +70,23 @@ function countdown(){
 }
 countdown();
 setInterval(countdown, 1000);
+const aperturaBiglietti = new Date("2026-07-08T00:00:00+02:00");
+const ora = new Date();
+
+document.querySelectorAll(".ticket-locked").forEach(button => {
+  const link = button.dataset.ticketLink;
+
+  if (ora >= aperturaBiglietti) {
+    button.href = link;
+    button.target = "_blank";
+    button.rel = "noopener";
+    button.textContent = "Acquista il biglietto";
+    button.classList.remove("ticket-locked");
+    button.classList.add("ticket-available");
+  } else {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      alert("La vendita dei biglietti aprirà l'8 luglio 2026.");
+    });
+  }
+});
