@@ -965,3 +965,37 @@ footer span{color:rgba(255,255,255,.7)}
     opacity: 1;
   }
 }
+
+/* FIX DARK MODE - CONTRASTI */
+
+@media (prefers-color-scheme: dark) {
+  .countdown strong {
+    color: #f8f6f1 !important;
+  }
+
+  .countdown span {
+    color: #e0cf9f !important;
+  }
+
+  .rule strong {
+    color: #f8f6f1 !important;
+  }
+
+  .rule span {
+    color: rgba(248,246,241,.82) !important;
+  }
+
+  .rules-list {
+    background: #1b2740 !important;
+  }
+
+  .rule {
+    border-bottom-color: rgba(224,207,159,.25) !important;
+  }
+}
+
+/* BARRA SOTTO MENU ANCHE IN HOME */
+
+.nav {
+  border-bottom: 1px solid rgba(224,207,159,.35) !important;
+}
