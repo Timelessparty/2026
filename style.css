@@ -792,3 +792,176 @@ footer span{color:rgba(255,255,255,.7)}
     text-align: center;
   }
 }
+
+
+/* ======================
+   DARK MODE AUTOMATICA - TIMELESS
+   Attiva solo se il dispositivo/browser è in modalità scura.
+====================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ivory: #101725;
+    --cream: #151f33;
+    --white: #1b2740;
+    --ink: #f8f6f1;
+    --muted: rgba(248,246,241,.72);
+    --line: rgba(224,207,159,.24);
+    --shadow: 0 28px 90px rgba(0,0,0,.34);
+  }
+
+  body {
+    background: var(--ivory) !important;
+    color: var(--ink) !important;
+  }
+
+  .section {
+    background-color: var(--ivory);
+  }
+
+  .nav.scrolled,
+  body.inner-page .nav {
+    background: rgba(16,23,37,.94) !important;
+    color: #f8f6f1 !important;
+    border-bottom-color: rgba(224,207,159,.24);
+  }
+
+  .nav.scrolled .logo,
+  .nav.scrolled .menu a,
+  body.inner-page .nav .logo,
+  body.inner-page .nav .menu a {
+    color: #f8f6f1 !important;
+  }
+
+  .menu .cta,
+  body.inner-page .menu .cta,
+  .nav.scrolled .menu .cta {
+    background: var(--gold) !important;
+    color: #ffffff !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  .page-hero h1,
+  .price {
+    color: #f8f6f1 !important;
+  }
+
+  p,
+  li,
+  span,
+  .page-hero p {
+    color: var(--muted);
+  }
+
+  .label,
+  .ticket-type,
+  .parking-address,
+  .kicker {
+    color: var(--gold-soft) !important;
+  }
+
+  .hero h1,
+  .hero .slogan,
+  .hero .kicker,
+  .hero .meta span {
+    color: #ffffff !important;
+  }
+
+  .hero {
+    background:
+      linear-gradient(rgba(7,12,22,.62), rgba(7,12,22,.58)),
+      url("https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=2200&q=85") center/cover !important;
+  }
+
+  .page-hero {
+    background:
+      linear-gradient(rgba(7,12,22,.72), rgba(7,12,22,.86)),
+      var(--bg) center/cover !important;
+  }
+
+  .card,
+  .feature,
+  .ticket,
+  .location-box,
+  .faq-item,
+  .parking-card,
+  .parking-map-box,
+  .countdown div,
+  .rules-list {
+    background: #1b2740 !important;
+    border-color: rgba(224,207,159,.24) !important;
+  }
+
+  .ticket.featured {
+    background: linear-gradient(180deg, #1b2740, #151f33) !important;
+    border-color: rgba(224,207,159,.45) !important;
+  }
+
+  .info-band,
+  .info-item,
+  footer,
+  .premium-footer {
+    background: #0c1424 !important;
+  }
+
+  .info-item strong,
+  footer h2,
+  footer p,
+  footer span,
+  .premium-footer h2,
+  .premium-footer p,
+  .premium-footer span,
+  .footer-links a {
+    color: #f8f6f1 !important;
+  }
+
+  .footer-brand p,
+  footer p {
+    color: var(--gold-soft) !important;
+  }
+
+  .btn.light {
+    background: transparent !important;
+    color: #f8f6f1 !important;
+    border-color: rgba(224,207,159,.35) !important;
+  }
+
+  .btn.primary {
+    background: var(--gold) !important;
+    color: #ffffff !important;
+  }
+
+  .hero .btn.primary {
+    background: #f8f6f1 !important;
+    color: #14213d !important;
+  }
+
+  .hero .btn.light {
+    color: #ffffff !important;
+    border-color: rgba(255,255,255,.55) !important;
+  }
+
+  .parking-section {
+    background:
+      radial-gradient(circle at top, rgba(224,207,159,.09), transparent 34%),
+      #151f33 !important;
+  }
+
+  .parking-warning {
+    background: #0c1424 !important;
+  }
+
+  .swatch span {
+    color: #14213d !important;
+  }
+
+  .reveal {
+    opacity: 0;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+  }
+}
