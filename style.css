@@ -828,3 +828,49 @@ footer span{color:rgba(255,255,255,.7)}
     text-align: center;
   }
 }
+
+/* FIX URGENTE TESTI NON VISIBILI */
+
+body,
+body p,
+body span,
+body li {
+  color: #746c62 !important;
+}
+
+h1,
+h2,
+h3,
+.logo,
+.menu a,
+.page-hero h1,
+.page-hero p,
+.ticket-type,
+.price,
+.label {
+  color: #14213d !important;
+}
+
+.hero h1,
+.hero .slogan,
+.hero .meta span,
+.hero .kicker {
+  color: #ffffff !important;
+}
+
+.btn.primary,
+.menu .cta {
+  color: #ffffff !important;
+}
+
+footer,
+footer h2,
+footer p,
+footer span,
+.premium-footer,
+.premium-footer h2,
+.premium-footer p,
+.premium-footer span,
+.footer-links a {
+  color: #ffffff !important;
+}
