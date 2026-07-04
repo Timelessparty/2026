@@ -696,3 +696,205 @@ footer span{color:rgba(255,255,255,.7)}
   color: var(--muted);
   text-align: center;
 }
+
+/* ======================
+   PREMIUM FOOTER
+====================== */
+
+.premium-footer {
+  background:
+    radial-gradient(circle at top, rgba(224,207,159,.16), transparent 35%),
+    var(--navy);
+  color: var(--white);
+  padding: 80px 24px 34px;
+  border-top: 1px solid rgba(224,207,159,.35);
+}
+
+.footer-inner {
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.footer-brand h2 {
+  color: var(--white);
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+.footer-brand p {
+  color: var(--gold-soft);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
+.footer-brand span,
+.footer-bottom span {
+  color: rgba(255,255,255,.68);
+}
+
+.footer-links {
+  display: grid;
+  gap: 12px;
+  text-align: right;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,.78);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.footer-links a:hover {
+  color: var(--gold-soft);
+}
+
+.footer-bottom {
+  max-width: 1240px;
+  margin: 48px auto 0;
+  padding-top: 22px;
+  border-top: 1px solid rgba(224,207,159,.22);
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  font-size: 13px;
+}
+
+/* ======================
+   PREMIUM HOVER EFFECTS
+====================== */
+
+.btn,
+.feature,
+.card,
+.ticket,
+.location-box,
+.faq-item,
+.parking-card {
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease,
+    background .25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px rgba(20,33,61,.18);
+}
+
+.feature:hover,
+.card:hover,
+.ticket:hover,
+.location-box:hover,
+.faq-item:hover,
+.parking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 34px 90px rgba(20,33,61,.18);
+  border-color: rgba(182,154,95,.58);
+}
+
+.menu a,
+.footer-links a {
+  transition: color .2s ease, opacity .2s ease;
+}
+
+/* ======================
+   AUTO DARK MODE
+====================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ivory: #111827;
+    --cream: #16213a;
+    --white: #1c2740;
+    --ink: #f8f6f1;
+    --muted: rgba(248,246,241,.72);
+    --line: rgba(224,207,159,.26);
+    --shadow: 0 28px 90px rgba(0,0,0,.28);
+  }
+
+  body {
+    background: var(--ivory);
+    color: var(--ink);
+  }
+
+  .nav.scrolled,
+  body.inner-page .nav {
+    background: rgba(17,24,39,.92);
+    color: var(--white);
+  }
+
+  h2,
+  h3,
+  .page-hero h1,
+  .page-hero p {
+    color: #f8f6f1;
+  }
+
+  p {
+    color: var(--muted);
+  }
+
+  .card,
+  .ticket,
+  .feature,
+  .location-box,
+  .faq-item,
+  .parking-card,
+  .parking-map-box,
+  .countdown div {
+    background: #1c2740;
+    border-color: rgba(224,207,159,.24);
+  }
+
+  .ticket.featured {
+    background: linear-gradient(180deg, #1c2740, #16213a);
+  }
+
+  .btn.light {
+    background: transparent;
+    color: #f8f6f1;
+    border-color: rgba(224,207,159,.35);
+  }
+
+  .page-hero {
+    background:
+      linear-gradient(rgba(17,24,39,.72), rgba(17,24,39,.88)),
+      var(--bg) center/cover;
+  }
+
+  .parking-section {
+    background: #16213a;
+  }
+}
+
+/* ======================
+   RESPONSIVE FOOTER
+====================== */
+
+@media(max-width: 760px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
