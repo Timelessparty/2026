@@ -637,46 +637,102 @@ footer span{color:rgba(255,255,255,.7)}
   cursor: pointer;
   opacity: 1;
 }
-
 .parking-section {
-  background: var(--cream);
+  background:
+    linear-gradient(rgba(251,248,241,.88), rgba(251,248,241,.92)),
+    radial-gradient(circle at top left, rgba(182,154,95,.18), transparent 34%);
 }
 
-.parking-grid {
+.parking-timeline {
+  margin-top: 46px;
+  position: relative;
+}
+
+.parking-timeline::before {
+  content: "";
+  position: absolute;
+  left: 72px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+}
+
+.parking-item {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 42px;
+  grid-template-columns: 145px 1fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 24px;
 }
 
-.parking-card {
+.parking-time {
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  line-height: 1;
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 2;
+}
+
+.parking-content {
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 34px;
-  padding: 32px;
+  padding: 30px 34px;
   box-shadow: var(--shadow);
 }
 
-.parking-card span {
-  display: inline-block;
+.parking-content h3 {
+  margin-bottom: 8px;
+}
+
+.parking-address {
   color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: .14em;
-  font-size: 12px;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.parking-link {
+  display: inline-flex;
+  margin-top: 10px;
+  color: var(--navy);
+  text-decoration: none;
   font-weight: 900;
-  margin-bottom: 14px;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 3px;
 }
 
-.parking-card h3 {
-  margin-bottom: 18px;
+.parking-link:hover {
+  color: var(--gold);
 }
 
-.parking-card p {
-  font-size: 15px;
-}
+@media(max-width: 700px) {
+  .parking-timeline::before {
+    display: none;
+  }
 
-@media(max-width: 920px) {
-  .parking-grid {
+  .parking-item {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .parking-time {
+    width: auto;
+    height: auto;
+    border-radius: 999px;
+    padding: 12px 18px;
+    font-size: 24px;
+    justify-self: start;
   }
 }
