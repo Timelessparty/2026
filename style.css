@@ -688,3 +688,11 @@ footer span{color:rgba(255,255,255,.7)}
     grid-template-columns: 1fr;
   }
 }
+
+.ticket-note {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+  text-align: center;
+}
