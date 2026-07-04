@@ -1018,3 +1018,23 @@ footer span{color:rgba(255,255,255,.7)}
   background: #b69a5f !important;
   color: #ffffff !important;
 }
+
+/* NAVBAR SCURA SOLO IN DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+  .nav {
+    background: rgba(16,23,37,.96) !important;
+    border-bottom: 1px solid rgba(224,207,159,.35) !important;
+    color: #f8f6f1 !important;
+  }
+
+  .nav .logo,
+  .nav .menu a {
+    color: #f8f6f1 !important;
+  }
+
+  .nav .menu .cta {
+    background: #b69a5f !important;
+    color: #ffffff !important;
+  }
+}
