@@ -1,9 +1,10 @@
-
+document.documentElement.classList.add('animate');
 const nav = document.querySelector('.nav');
 const menu = document.querySelector('.menu');
 const toggle = document.querySelector('.menu-toggle');
 
 function onScroll(){
+  if(!nav) return;
   if(window.scrollY > 30){
     nav.classList.add('scrolled');
   }else{

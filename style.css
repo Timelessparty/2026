@@ -591,12 +591,17 @@ footer p{
 footer span{color:rgba(255,255,255,.7)}
 
 .reveal{
-  opacity:0;
-  transform:translateY(22px);
+  opacity:1;
+  transform:none;
   transition:.7s ease;
 }
 
-.reveal.visible{
+.animate .reveal{
+  opacity:0;
+  transform:translateY(22px);
+}
+
+.animate .reveal.visible{
   opacity:1;
   transform:translateY(0);
 }
@@ -769,3 +774,21 @@ footer span{color:rgba(255,255,255,.7)}
   font-size: 13px;
 }
 
+
+/* RESPONSIVE FOOTER FIX */
+@media(max-width: 760px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
