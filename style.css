@@ -999,3 +999,22 @@ footer span{color:rgba(255,255,255,.7)}
 .nav {
   border-bottom: 1px solid rgba(224,207,159,.35) !important;
 }
+
+/* NAVBAR SEMPRE VISIBILE ANCHE IN HOME */
+
+.nav {
+  background: rgba(251,248,241,.94) !important;
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(224,207,159,.35) !important;
+  color: #14213d !important;
+}
+
+.nav .logo,
+.nav .menu a {
+  color: #14213d !important;
+}
+
+.nav .menu .cta {
+  background: #b69a5f !important;
+  color: #ffffff !important;
+}
