@@ -770,45 +770,6 @@ footer span{color:rgba(255,255,255,.7)}
 }
 
 /* ======================
-   PREMIUM HOVER EFFECTS
-====================== */
-
-.btn,
-.feature,
-.card,
-.ticket,
-.location-box,
-.faq-item,
-.parking-card {
-  transition:
-    transform .25s ease,
-    box-shadow .25s ease,
-    border-color .25s ease,
-    background .25s ease;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 42px rgba(20,33,61,.18);
-}
-
-.feature:hover,
-.card:hover,
-.ticket:hover,
-.location-box:hover,
-.faq-item:hover,
-.parking-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 34px 90px rgba(20,33,61,.18);
-  border-color: rgba(182,154,95,.58);
-}
-
-.menu a,
-.footer-links a {
-  transition: color .2s ease, opacity .2s ease;
-}
-
-/* ======================
    RESPONSIVE FOOTER
 ====================== */
 
@@ -827,50 +788,4 @@ footer span{color:rgba(255,255,255,.7)}
     flex-direction: column;
     text-align: center;
   }
-}
-
-/* FIX URGENTE TESTI NON VISIBILI */
-
-body,
-body p,
-body span,
-body li {
-  color: #746c62 !important;
-}
-
-h1,
-h2,
-h3,
-.logo,
-.menu a,
-.page-hero h1,
-.page-hero p,
-.ticket-type,
-.price,
-.label {
-  color: #14213d !important;
-}
-
-.hero h1,
-.hero .slogan,
-.hero .meta span,
-.hero .kicker {
-  color: #ffffff !important;
-}
-
-.btn.primary,
-.menu .cta {
-  color: #ffffff !important;
-}
-
-footer,
-footer h2,
-footer p,
-footer span,
-.premium-footer,
-.premium-footer h2,
-.premium-footer p,
-.premium-footer span,
-.footer-links a {
-  color: #ffffff !important;
 }
