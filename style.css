@@ -302,7 +302,7 @@ p{
   max-width:1240px;
   margin:auto;
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(5,1fr);
   border:1px solid rgba(224,207,159,.38);
   background:rgba(224,207,159,.38);
   gap:1px;
