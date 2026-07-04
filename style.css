@@ -769,23 +769,3 @@ footer span{color:rgba(255,255,255,.7)}
   font-size: 13px;
 }
 
-/* ======================
-   RESPONSIVE FOOTER
-====================== */
-
-@media(max-width: 760px) {
-  .footer-inner {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .footer-links {
-    text-align: center;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
-}
